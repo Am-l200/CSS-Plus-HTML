@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descent header</title>
+<style>
+    :root{
+        --color2:white;
+        --color1:rgb(10, 10, 10);
+        --minh:93vh;
+    }
+    .header1{
+        min-height: var(--minh);
+    }
+    body{
+        background-color: white;
+    }
+    .header1{
+        background-image:linear-gradient(to bottom,
+        var(--color2) 50%,
+        var(--color1) 50%);
+    }
+    .header1::after{
+        content: "Who Knows";
+        display:block;
+        min-height: var(--minh);
+    }
+    .header2{
+        top: 20px;
+        position: sticky;
+        display: flex;
+        min-height: var(--minh);
+        mix-blend-mode: difference;
+        align-items: center;
+        justify-content: center;
+    }
+    .header2 h1, p {
+        margin: auto;
+        text-align: center;
+        color: var(--color2);
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-height: var(--minh);
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(243, 239, 239);
+    }
+    .btn{
+        margin: auto;
+        width: 8rem;
+        justify-content: center;
+        height: 4ch;
+        border-radius: 10px;
+        display: flex;
+    
+        
+    }
+    h1{ background-color: rgb(0, 0, 0);
+        animation-name: slidedown;
+        animation-duration: 10s;
+        width: 30%;
+        border: 10px white solid;
+    }
+    p{
+        animation-name: slideup;
+        animation-duration: 10s;
+        background-color: green;
+        width: 30%;
+        display: flex;
+        border: 10px white solid;
+        
+    }
+    .btn2{
+        background-color: rgb(255, 4, 4);
+        min-height: var(--minh);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 30%;
+        border: 10px white solid;
+        animation-name: fadein;
+        animation-duration: 10s;
+    }
+    @keyframes slidedown{
+        0% {
+            transform: translateY(-100px);
+             
+        }
+        80% {
+            transfrom: translateY(50px);
+                   }
+        100% {
+            transform:translateX(0px);
+        }
+    }
+    @keyframes slideup{
+        0% {
+            transform: translateY(100px);
+                    }
+        80% {
+            transfrom: translateY(-50px);
+                   }
+        100% {
+            transform:translateX(0px);
+        }
+    }
+}
+    @keyframes fadein{
+        0% {
+            transform: translateY(-100px);
+             
+        }
+        80% {
+            transfrom: translateY(50px);
+                   }
+        100% {
+            transform:translateX(0px);
+        }
+    }
+ </style>
+</head>
+<body>
+
+         <div class="header1">
+           
+            <div class="header2">
+                <h1>Out Doors</h1> <br />
+                <div class="btn2">
+                <button type="button" class="btn">Find out</button>
+                 </div>
+                <p>Is where life begins</p>
+            </div>
+            
+        </div>
+    
+</body>
+</html>
